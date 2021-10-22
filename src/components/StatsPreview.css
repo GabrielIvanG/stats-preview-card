@@ -1,0 +1,51 @@
+body {
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  background-color: var(--color-card-background);
+  width: 1050px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 446px;
+}
+.textSection {
+  color: var(--color-white);
+  flex: 1;
+  margin: 4.5rem 3.5rem;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+.accent {
+  color: var(--color-accent);
+}
+.paragraph {
+  color: var(--color-white-paragraph);
+  margin: 1.5rem 0 1.5rem;
+  padding-right: 2.25rem;
+  width: 90%;
+  font-size: 15px;
+}
+.stats {
+  width: 82%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+.stats p {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+  font-family: var(--font-lexend);
+  color: var(--color-white-stat-headings);
+}
+
+.imageSection {
+  background: url('../resources/image-header-desktop.jpg'), 0 0 no-repeat fixed;
+  height: 100%;
+  width: 50%;
+  background-color: var(--color-accent);
+  background-blend-mode: multiply;
+}
