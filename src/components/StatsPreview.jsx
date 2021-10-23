@@ -1,6 +1,5 @@
 import React from 'react';
 import './StatsPreview.css';
-import headerImage from '../resources/image-header-desktop.jpg';
 
 export default function StatsPreview() {
   return (
