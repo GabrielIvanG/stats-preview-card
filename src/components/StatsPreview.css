@@ -3,6 +3,7 @@ body {
 }
 .container {
   display: flex;
+  flex-direction: row;
   background-color: var(--color-card-background);
   width: 1050px;
   border-radius: 0.5rem;
@@ -11,8 +12,8 @@ body {
 }
 .textSection {
   color: var(--color-white);
-  flex: 1;
   margin: 4.5rem 3.5rem;
+  width: 450px;
 }
 
 .title {
@@ -48,4 +49,51 @@ body {
   width: 50%;
   background-color: var(--color-accent);
   background-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 376px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 2rem;
+  }
+  .textSection {
+    margin: 1rem;
+    word-wrap: break-word;
+    width: auto;
+    text-align: center;
+    height: 65%;
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .imageSection {
+    background: url('../resources/image-header-mobile.jpg'), 0 0 no-repeat fixed;
+    width: auto;
+    background-color: var(--color-accent);
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+
+  .paragraph {
+    margin: 0 auto;
+    padding: 1rem 0 1rem;
+    font-size: 1.05rem;
+  }
+
+  .stats {
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .stats > * {
+    margin-top: 1.5rem;
+  }
 }
